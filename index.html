@@ -2,175 +2,286 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Монтаж плинтусов — Минск и Беларусь</title>
-  <meta name="description" content="Профессиональный монтаж скрытых, теневых и дизайнерских плинтусов с подсветкой.">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Монтаж плинтусов — Минск и область</title>
+  <meta name="description" content="Профессиональный монтаж плинтусов: дюрополимер, МДФ, ПВХ, дерево, алюминий. Онлайн калькулятор. Минск и выезд по РБ.">
+  <link rel="preload" href="images/hero.jpg" as="image">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script>
+    // Настрой здесь
+    window.WHATSAPP_PHONE = ""; // пример: "375291234567" (без +)
+    window.PHONE_DISPLAY = "+375 (00) 000-00-00";
+    window.ADDRESS_TEXT = "Минск, выезд по РБ";
+  </script>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-row">
-      <div class="brand">
-        <div class="logo">SZ</div>
-        <div class="brand-text">
-          <h1>Монтаж плинтусов всех типов и любой сложности</h1>
-          <p class="muted">в Минске и по Беларуси — онлайн и офлайн консультации</p>
+  <header class="nav">
+    <div class="container">
+      <div class="nav-inner">
+        <div class="brand"><span class="dot"></span> Монтаж Плинтусов</div>
+        <nav class="nav-links">
+          <a href="#services">Услуги</a>
+          <a href="#benefits">Преимущества</a>
+          <a href="#works">Работы</a>
+          <a href="#calc">Калькулятор</a>
+          <a href="#reviews">Отзывы</a>
+          <a href="#contacts">Контакты</a>
+        </nav>
+        <div class="nav-cta">
+          <a class="btn" href="#calc">Рассчитать</a>
+          <button class="btn btn-gold" id="btnTopWhatsApp" type="button">WhatsApp</button>
         </div>
-      </div>
-      <div class="header-ctas">
-        <a class="btn btn-ghost" href="tel:+375298274342"><i class="fa fa-phone"></i> Позвонить</a>
-        <a class="btn" href="https://wa.me/375298274342" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
       </div>
     </div>
   </header>
-  <section class="hero">
-    <div class="container hero-grid">
-      <div class="hero-content" data-aos="fade-up">
-        <h2>Премиальный монтаж плинтусов под ключ</h2>
-        <p class="lead">Скрытые профили, подсветка, микро-решения, покраска и герметизация — аккуратно и быстро.</p>
-        <div class="hero-actions">
-          <a class="btn" href="#calc">Рассчитать стоимость</a>
-          <a class="btn btn-ghost" href="#consult">Бесплатная консультация</a>
-        </div>
-        <div class="contact-short muted">Тел: +375 (29) 827-43-42 • Viber / WhatsApp / Telegram</div>
-      </div>
-      <div class="hero-media" data-aos="zoom-in">
-        <img src="images/hero.jpg" alt="Монтаж плинтуса" />
-      </div>
-    </div>
-  </section>
-  <section class="section advantages" data-aos="fade-up">
-    <div class="container">
-      <h3>Почему выбирают нас</h3>
-      <div class="advantages-grid">
-        <div class="adv"><i class="fa fa-tools fa-2x"></i><h4>Профессиональные мастера</h4><p class="muted">Опыт, точность и аккуратность в каждом проекте.</p></div>
-        <div class="adv"><i class="fa fa-bolt fa-2x"></i><h4>Подсветка и дизайн</h4><p class="muted">Дизайнерские решения с подсветкой для премиальных интерьеров.</p></div>
-        <div class="adv"><i class="fa fa-shield-alt fa-2x"></i><h4>Гарантия и ответственность</h4><p class="muted">Гарантия на работы и аккуратность.</p></div>
-        <div class="adv"><i class="fa fa-map-marker-alt fa-2x"></i><h4>Выезд по всей Беларуси</h4><p class="muted">Быстрый выезд на замер и работа в регионах.</p></div>
-      </div>
-    </div>
-  </section>
-  <section class="section services" data-aos="fade-up">
-    <div class="container">
-      <h3>Наши услуги и цены</h3>
-      <div class="services-grid">
-        <div class="service-card"><h4>Скрытый плинтус</h4><div class="price">60 руб/м.п</div></div>
-        <div class="service-card"><h4>С подсветкой</h4><div class="price">90 руб/м.п</div></div>
-        <div class="service-card"><h4>Теневой плинтус</h4><div class="price">30 руб/м.п</div></div>
-        <div class="service-card"><h4>Микро плинтус</h4><div class="price">6 руб/м.п</div></div>
-        <div class="service-card"><h4>Микро L</h4><div class="price">8 руб/м.п</div></div>
-        <div class="service-card"><h4>Дюрополимер</h4><div class="price">10 руб/м.п</div></div>
-        <div class="service-card"><h4>МДФ</h4><div class="price">10 руб/м.п</div></div>
-        <div class="service-card"><h4>ПВХ</h4><div class="price">8 руб/м.п</div></div>
-        <div class="service-card"><h4>Дерево</h4><div class="price">12 руб/м.п</div></div>
-        <div class="service-card"><h4>Металл</h4><div class="price">15 руб/м.п</div></div>
-        <div class="service-card"><h4>Полиуретан</h4><div class="price">12 руб/м.п</div></div>
-        <div class="service-card"><h4>Покраска</h4><div class="price">5 руб/м.п</div></div>
-        <div class="service-card"><h4>Герметизация</h4><div class="price">3 руб/м.п</div></div>
-      </div>
-    </div>
-  </section>
-  <section class="section gallery" data-aos="fade-up">
-    <div class="container">
-      <h3>Наши работы</h3>
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="images/gallery-1.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="images/gallery-2.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="images/gallery-3.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="images/gallery-4.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="images/gallery-5.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="images/gallery-6.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="images/gallery-7.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="images/gallery-8.jpg" alt=""></div>
-        </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
-      </div>
-    </div>
-  </section>
-  <section class="section calc" id="calc" data-aos="fade-up">
-    <div class="container">
-      <h3>Онлайн-расчёт стоимости</h3>
-      <p class="muted">Добавьте одну или несколько позиций. Коэффициенты по типу стены можно поменять в разделе владельца.</p>
-      <div class="calc-inner">
-        <table id="calcTable">
-          <thead>
-            <tr><th>Услуга</th><th>м.п.</th><th>Углы (шт)</th><th>Примык. к дверям (шт)</th><th>Тип стены</th><th>Итог</th><th></th></tr>
-          </thead>
-          <tbody id="calcBody"></tbody>
-        </table>
-        <div class="calc-controls">
-          <button id="addRowBtn" class="btn">Добавить позицию</button>
-          <button id="clearBtn" class="btn btn-ghost">Очистить все</button>
-          <div class="grand"><span>Итого:</span> <strong id="grandTotal">0 руб</strong></div>
-        </div>
-        <details style="margin-top:14px;color:#c9b37a"><summary style="cursor:pointer">Коэффициенты (только для владельца)</summary>
-          <div class="coef-grid">
-            <label>Кирпичная <input class="coefInput" data-key="brick" type="number" step="0.01" value="1.15"></label>
-            <label>Монолитная <input class="coefInput" data-key="monolit" type="number" step="0.01" value="1.20"></label>
-            <label>Штукатурка <input class="coefInput" data-key="plaster" type="number" step="0.01" value="1.10"></label>
-            <label>ГКЛ <input class="coefInput" data-key="gk" type="number" step="0.01" value="0.95"></label>
-            <label>Блочная <input class="coefInput" data-key="block" type="number" step="0.01" value="1.10"></label>
-            <label>Дерево <input class="coefInput" data-key="wood" type="number" step="0.01" value="1.00"></label>
-            <label>Радиусная <input class="coefInput" data-key="radius" type="number" step="0.01" value="1.25"></label>
-          </div>
-        </details>
-        <div style="margin-top:12px;display:flex;gap:8px">
-          <button id="sendWA" class="btn" style="background:#25D366">Отправить расчёт в WhatsApp</button>
-          <button id="copyBtn" class="btn btn-ghost">Скопировать расчёт</button>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="section reviews" data-aos="fade-up">
-    <div class="container">
-      <h3>Отзывы</h3>
-      <div class="reviews-grid">
-        <div class="rev"><strong>Андрей К.</strong><p class="muted">«Аккуратно и быстро — без пыли. Рекомендую!»</p></div>
-        <div class="rev"><strong>Екатерина С.</strong><p class="muted">«Профессионально, подсветка выглядит супер.»</p></div>
-        <div class="rev"><strong>Марина П.</strong><p class="muted">«Выезд на замер был на следующий день. Спасибо!»</p></div>
-      </div>
-    </div>
-  </section>
-  <section class="section contact" id="consult" data-aos="fade-up">
-    <div class="container">
-      <h3>Консультации и контакты</h3>
-      <p class="muted">Онлайн (видео) и офлайн (выезд на замер). Подберу профиль, подсветку и технологию монтажа.</p>
-      <div class="contact-grid">
-        <div>
-          <p><strong>Тел:</strong> +375 (29) 827-43-42</p>
-          <p><strong>Email:</strong> sergey8274342@yandex.ru</p>
-          <p><strong>Telegram:</strong> <a href="https://t.me/sergey8274342" target="_blank">@sergey8274342</a></p>
-        </div>
-        <div>
-          <form id="leadForm">
-            <input type="text" id="clientName" placeholder="Имя" required>
-            <input type="tel" id="clientPhone" placeholder="Телефон" value="+375 (29) 827-43-42" required>
-            <textarea id="clientComment" placeholder="Комментарий / адрес"></textarea>
-            <div style="display:flex;gap:8px;margin-top:8px">
-              <button type="button" id="sendLeadBtn" class="btn">Отправить в WhatsApp</button>
-              <a class="btn btn-ghost" href="tel:+375298274342">Позвонить</a>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-frame reveal">
+          <div class="hero-bg" aria-hidden="true"></div>
+          <div class="hero-overlay" aria-hidden="true"></div>
+
+          <div class="hero-content">
+            <div>
+              <div class="kicker"><b>Минск</b> и выезд по РБ • аккуратно • чистые запилы</div>
+              <h1>Монтаж плинтусов<br>премиального уровня</h1>
+              <p class="lead">
+                Дюрополимер, МДФ, ПВХ, дерево, алюминий. Идеальные внутренние/внешние углы,
+                ровные стыки, аккуратная герметизация. Рассчитайте стоимость онлайн и отправьте расчёт в WhatsApp.
+              </p>
+              <div class="hero-actions">
+                <a class="btn btn-gold" href="#calc">Рассчитать стоимость</a>
+                <a class="btn" href="#contacts">Заказать замер</a>
+              </div>
+
+              <div class="pills stagger">
+                <span class="pill">Гарантия на работу</span>
+                <span class="pill">Проф. инструмент</span>
+                <span class="pill">Уборка после монтажа</span>
+              </div>
             </div>
-          </form>
+
+            <div class="hero-side">
+              <div class="grid stagger">
+                <div class="fact">
+                  <b>Запил без сколов</b>
+                  <span>Чистый рез, правильная геометрия, минимальные зазоры.</span>
+                </div>
+                <div class="fact">
+                  <b>Сложные стены</b>
+                  <span>Кирпич / монолит / ГКЛ — подбираем крепёж и технологию.</span>
+                </div>
+              </div>
+              <hr class="sep">
+              <div class="small">Напишите, какой плинтус и высота — подскажем точную цену и сроки.</div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-  <footer class="site-footer">
-    <div class="container">
-      <div>© Сергей — Монтаж плинтусов. Минск и Беларусь.</div>
-      <div class="muted">montazh-plintusa.808.by</div>
-    </div>
-  </footer>
-  <div id="lightbox" class="lightbox" style="display:none" onclick="this.style.display='none'"><img id="lbimg" src="" style="max-width:90%;max-height:90%"/></div>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script src="js/main.js"></script>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <h2 class="section-title reveal">Наши услуги</h2>
+        <p class="section-sub reveal">Под ключ: от консультации и расчёта до финишной герметизации и уборки.</p>
+        <div class="grid3 stagger">
+          <div class="tile">
+            <div class="icon">🧰</div>
+            <b>Монтаж плинтуса</b>
+            <span>Дюрополимер / МДФ / ПВХ / дерево / металл. Клей или комбинированное крепление.</span>
+          </div>
+          <div class="tile">
+            <div class="icon">📐</div>
+            <b>Подрезка и примыкания</b>
+            <span>Дверные наличники, сложные углы, стыковка по рисунку/фактуре.</span>
+          </div>
+          <div class="tile">
+            <div class="icon">🎨</div>
+            <b>Герметизация и покраска</b>
+            <span>Аккуратный шов по примыканию, подготовка, окраска в 1–2 слоя.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="benefits">
+      <div class="container">
+        <h2 class="section-title reveal">Наши преимущества</h2>
+        <p class="section-sub reveal">Мы не “просто приклеили”. Мы делаем финиш, который выглядит как в шоу-руме.</p>
+        <div class="grid3 stagger">
+          <div class="tile">
+            <div class="icon">⭐</div>
+            <b>Премиальная аккуратность</b>
+            <span>Ровные линии, минимальные зазоры, эстетичные швы.</span>
+          </div>
+          <div class="tile">
+            <div class="icon">⏱️</div>
+            <b>Сроки и дисциплина</b>
+            <span>Приезжаем вовремя, работаем по плану, сдаём объект чистым.</span>
+          </div>
+          <div class="tile">
+            <div class="icon">🛡️</div>
+            <b>Гарантия</b>
+            <span>Даем гарантию на монтаж и используемые материалы.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="works">
+      <div class="container">
+        <h2 class="section-title reveal">Наши работы</h2>
+        <p class="section-sub reveal">Замените заглушки на реальные фото: углы, стыки, сложные примыкания, теневые решения.</p>
+        <div class="works-grid stagger">
+          <div class="work">
+            <img src="images/work_1.jpg" alt="Работа 1">
+            <div class="cap"><b>Дюрополимер 100–120 мм</b><span>Аккуратные углы, герметизация, подготовка под покраску.</span></div>
+          </div>
+          <div class="work">
+            <img src="images/work_2.jpg" alt="Работа 2">
+            <div class="cap"><b>МДФ / ПВХ</b><span>Чистый рез, ровные стыки, быстрый темп на больших объёмах.</span></div>
+          </div>
+          <div class="work">
+            <img src="images/work_3.jpg" alt="Работа 3">
+            <div class="cap"><b>Скрытый / теневой</b><span>Премиальные решения, точные примыкания.</span></div>
+          </div>
+          <div class="work">
+            <img src="images/work_4.jpg" alt="Работа 4">
+            <div class="cap"><b>Коммерческий объект</b><span>Сдача в срок, стабильное качество на серии помещений.</span></div>
+          </div>
+          <div class="work">
+            <img src="images/work_5.jpg" alt="Работа 5">
+            <div class="cap"><b>Сложные стены</b><span>Кирпич/монолит/ГКЛ — корректный крепёж и технология.</span></div>
+          </div>
+          <div class="work">
+            <img src="images/work_6.jpg" alt="Работа 6">
+            <div class="cap"><b>Финиш и уборка</b><span>После монтажа — чисто, без пыли, можно сразу заселяться.</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="calc">
+      <div class="container">
+        <h2 class="section-title reveal">Калькулятор стоимости</h2>
+        <p class="section-sub reveal">Добавьте одну или несколько позиций. Коэффициенты по стене — ниже (сохраняются в браузере).</p>
+
+        <div class="card calc-card reveal">
+          <div class="calc-table-wrap">
+            <table class="calc-table" aria-label="Калькулятор стоимости">
+              <thead>
+                <tr>
+                  <th>Услуга</th>
+                  <th class="w-sm">м.п.</th>
+                  <th class="w-sm">Углы</th>
+                  <th class="w-sm">Двери</th>
+                  <th>Тип стены</th>
+                  <th class="w-md">Итог</th>
+                  <th class="w-xs"></th>
+                </tr>
+              </thead>
+              <tbody id="calcRows"></tbody>
+            </table>
+          </div>
+
+          <div class="calc-actions">
+            <button class="btn btn-gold" id="btnAddRow" type="button">Добавить позицию</button>
+            <button class="btn" id="btnClear" type="button">Очистить</button>
+
+            <div class="calc-total">
+              <span>Итого:</span>
+              <strong id="grandTotal">0</strong>
+              <span>руб</span>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <h3 class="section-title" style="font-size:18px;margin-bottom:10px">Коэффициенты по типу стены</h3>
+          <div class="coef-grid" id="coefGrid"></div>
+
+          <div class="divider"></div>
+
+          <div class="calc-actions">
+            <button class="btn btn-gold" id="btnWhatsApp" type="button">Отправить расчёт в WhatsApp</button>
+            <button class="btn" id="btnCopy" type="button">Скопировать расчёт</button>
+            <span class="hint" id="copyHint" aria-live="polite"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews">
+      <div class="container">
+        <h2 class="section-title reveal">Отзывы клиентов</h2>
+        <p class="section-sub reveal">Здесь можно поставить реальные отзывы и фото (или ссылки на Instagram/Google).</p>
+        <div class="reviews stagger">
+          <div class="review">
+            <div class="stars">★★★★★</div>
+            <p>Очень аккуратная работа: углы идеальные, стыков не видно. После монтажа всё чисто — супер.</p>
+            <div class="who">Ирина К. • квартира</div>
+          </div>
+          <div class="review">
+            <div class="stars">★★★★★</div>
+            <p>Сделали быстро и качественно, помогли с подбором клея и герметика. Рекомендую.</p>
+            <div class="who">Алексей П. • дом</div>
+          </div>
+          <div class="review">
+            <div class="stars">★★★★★</div>
+            <p>Скрытый плинтус — сложная работа, но справились отлично. Результат как в салоне.</p>
+            <div class="who">Сергей Р. • коммерция</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacts">
+      <div class="container">
+        <h2 class="section-title reveal">Контакты</h2>
+        <p class="section-sub reveal">Напишите в WhatsApp: материал/высота плинтуса, метраж и фото стен — ответим с точным расчётом.</p>
+
+        <div class="contacts-grid">
+          <div class="card contact-card reveal">
+            <b>Связаться</b>
+            <ul class="contact-list">
+              <li><span>WhatsApp</span><small><a href="#" id="waLink">Открыть чат</a></small></li>
+              <li><span>Телефон</span><small><a href="tel:+375000000000" id="phoneLink">+375 (00) 000-00-00</a></small></li>
+              <li><span>Адрес</span><small id="addrText">Минск, выезд по РБ</small></li>
+              <li><span>График</span><small>Пн–Сб: 9:00–20:00</small></li>
+            </ul>
+            <hr class="sep">
+            <div class="small">Чтобы карта была точной — замените координаты в iframe (см. README).</div>
+          </div>
+
+          <div class="reveal">
+            <iframe class="map"
+              title="Карта"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=27.525%2C53.86%2C27.65%2C53.95&layer=mapnik&marker=53.90%2C27.56"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div>© <span id="y"></span> Монтаж плинтусов. Все права защищены.</div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", ()=>{
+      const phone = window.PHONE_DISPLAY || "+375 (00) 000-00-00";
+      const addr  = window.ADDRESS_TEXT || "Минск, выезд по РБ";
+      const phoneLink = document.getElementById("phoneLink");
+      if(phoneLink) phoneLink.textContent = phone;
+      const addrText = document.getElementById("addrText");
+      if(addrText) addrText.textContent = addr;
+    });
+  </script>
+  <script src="assets/app.js"></script>
 </body>
 </html>
