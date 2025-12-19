@@ -256,3 +256,119 @@ section{padding:46px 0}
   .coef-grid{grid-template-columns:repeat(2,minmax(160px,1fr))}
   .calc-total{width:100%;margin-left:0;justify-content:center}
 }
+
+
+/* ===== FULLSCREEN HERO WITH SERVICES OVERLAY ===== */
+.hero{
+  padding:0;
+}
+.hero-frame{
+  min-height:100vh;
+  border-radius:0;
+}
+.hero-content{
+  min-height:100vh;
+  align-items:center;
+}
+.hero-services{
+  margin-top:22px;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:12px;
+}
+.hero-service{
+  background:rgba(0,0,0,.45);
+  border:1px solid rgba(212,175,55,.22);
+  border-radius:18px;
+  padding:14px;
+  backdrop-filter:blur(10px);
+  transition:transform .25s ease,border-color .25s ease;
+}
+.hero-service:hover{
+  transform:translateY(-4px);
+  border-color:rgba(212,175,55,.55);
+}
+.hero-service b{
+  display:block;
+  font-size:15px;
+}
+.hero-service span{
+  display:block;
+  margin-top:6px;
+  color:rgba(255,255,255,.75);
+  font-size:13px;
+}
+
+@media(max-width:980px){
+  .hero-services{grid-template-columns:1fr}
+}
+
+
+/* ===== Hero services: fade + slide like template ===== */
+.hero-services .hero-service{
+  opacity:0;
+  transform: translateY(16px);
+  filter: blur(1px);
+  transition: opacity .65s ease, transform .65s ease, filter .65s ease, border-color .25s ease;
+  transition-delay: var(--d, 0ms);
+}
+.hero-services .hero-service.is-in{
+  opacity:1;
+  transform: translateY(0);
+  filter: blur(0);
+}
+
+/* Gold SVG icons */
+.hero-service .svc-head{
+  display:flex;
+  align-items:flex-start;
+  gap:10px;
+}
+.svc-ic{
+  width:34px;height:34px;flex:0 0 34px;
+  border-radius:14px;
+  display:grid;place-items:center;
+  border:1px solid rgba(212,175,55,.25);
+  background: rgba(212,175,55,.06);
+}
+.svc-ic svg{
+  width:20px;height:20px;
+  fill:none;
+  stroke: url(#goldGrad);
+  stroke-width:2;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  filter: drop-shadow(0 10px 18px rgba(212,175,55,.16));
+}
+.hero-service b{margin-top:1px}
+
+/* Sticky calc button over hero */
+.sticky-calc{
+  position:fixed;
+  right:18px;
+  bottom:18px;
+  z-index:120;
+  border-radius:18px;
+  padding:12px 14px;
+  font-weight:900;
+  letter-spacing:.1px;
+  border:1px solid rgba(212,175,55,.25);
+  background: rgba(7,7,11,.55);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 18px 60px rgba(0,0,0,.35);
+}
+.sticky-calc:hover{
+  border-color:rgba(212,175,55,.55);
+}
+.sticky-calc .mini{
+  display:block;
+  font-size:11px;
+  font-weight:600;
+  opacity:.78;
+  margin-top:2px;
+}
+
+@media(max-width:980px){
+  .sticky-calc{right:12px;bottom:12px}
+}
+

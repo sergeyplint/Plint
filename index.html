@@ -15,6 +15,11 @@
   </script>
 </head>
 <body>
+<a class="btn sticky-calc" href="#calc" id="stickyCalcBtn">
+  Рассчитать
+  <span class="mini">онлайн калькулятор</span>
+</a>
+
   <header class="nav">
     <div class="container">
       <div class="nav-inner">
@@ -36,50 +41,79 @@
   </header>
 
   <main>
-    <section class="hero" id="home">
-      <div class="container">
-        <div class="hero-frame reveal">
-          <div class="hero-bg" aria-hidden="true"></div>
-          <div class="hero-overlay" aria-hidden="true"></div>
+<!-- SVG defs (gold gradient) -->
+<svg width="0" height="0" style="position:absolute;left:-9999px;top:-9999px" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="goldGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d4af37"/>
+      <stop offset="100%" stop-color="#ffda63"/>
+    </linearGradient>
+  </defs>
+</svg>
 
-          <div class="hero-content">
-            <div>
-              <div class="kicker"><b>Минск</b> и выезд по РБ • аккуратно • чистые запилы</div>
-              <h1>Монтаж плинтусов<br>премиального уровня</h1>
-              <p class="lead">
-                Дюрополимер, МДФ, ПВХ, дерево, алюминий. Идеальные внутренние/внешние углы,
-                ровные стыки, аккуратная герметизация. Рассчитайте стоимость онлайн и отправьте расчёт в WhatsApp.
-              </p>
-              <div class="hero-actions">
-                <a class="btn btn-gold" href="#calc">Рассчитать стоимость</a>
-                <a class="btn" href="#contacts">Заказать замер</a>
-              </div>
+    
+<section class="hero" id="home">
+  <div class="hero-frame reveal">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
 
-              <div class="pills stagger">
-                <span class="pill">Гарантия на работу</span>
-                <span class="pill">Проф. инструмент</span>
-                <span class="pill">Уборка после монтажа</span>
-              </div>
-            </div>
+    <div class="hero-content container">
+      <div>
+        <div class="kicker"><b>Минск</b> и выезд по РБ • профессионально • аккуратно</div>
+        <h1>Монтаж плинтусов<br>премиального уровня</h1>
+        <p class="lead">
+          Чистый запил без сколов. Дюрополимер, МДФ, ПВХ, дерево, алюминий.
+          Онлайн‑расчёт стоимости и отправка в WhatsApp.
+        </p>
 
-            <div class="hero-side">
-              <div class="grid stagger">
-                <div class="fact">
-                  <b>Запил без сколов</b>
-                  <span>Чистый рез, правильная геометрия, минимальные зазоры.</span>
-                </div>
-                <div class="fact">
-                  <b>Сложные стены</b>
-                  <span>Кирпич / монолит / ГКЛ — подбираем крепёж и технологию.</span>
-                </div>
-              </div>
-              <hr class="sep">
-              <div class="small">Напишите, какой плинтус и высота — подскажем точную цену и сроки.</div>
-            </div>
+        <div class="hero-actions">
+          <a class="btn btn-gold" href="#calc">Рассчитать стоимость</a>
+          <a class="btn" href="#contacts">Заказать замер</a>
+        </div>
+
+        <div class="hero-services stagger">
+<div class="hero-service">
+  <div class="svc-head">
+    <div class="svc-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 7l3 3"/><path d="M5 19l4-1 9-9-3-3-9 9-1 4z"/><path d="M12 20h7"/></svg></div>
+    <div>
+      <b>Монтаж плинтуса</b>
+      <span>Все типы и высоты, идеальная геометрия.</span>
+    </div>
+  </div>
+</div>
+<div class="hero-service">
+  <div class="svc-head">
+    <div class="svc-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16"/><path d="M6 7v10a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V7"/><path d="M9 11h6"/><path d="M9 14h6"/></svg></div>
+    <div>
+      <b>Скрытый и теневой</b>
+      <span>Премиальные решения и сложные примыкания.</span>
+    </div>
+  </div>
+</div>
+<div class="hero-service">
+  <div class="svc-head">
+    <div class="svc-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h8"/><path d="M6 16l10-10 3 3-10 10H6v-3z"/><path d="M14 6l3 3"/></svg></div>
+    <div>
+      <b>Герметизация и покраска</b>
+      <span>Финишный результат как в шоу-руме.</span>
+    </div>
+  </div>
+</div>
+</div>
+          <div class="hero-service">
+            <b>Скрытый и теневой</b>
+            <span>Премиальные решения и сложные примыкания.</span>
+          </div>
+          <div class="hero-service">
+            <b>Герметизация и покраска</b>
+            <span>Финишный результат как в шоу‑руме.</span>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
+
 
     <section id="services">
       <div class="container">

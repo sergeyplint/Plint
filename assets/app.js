@@ -21,6 +21,16 @@
   });
   document.querySelectorAll(".reveal").forEach(el=>io.observe(el));
 
+  // Hero services stagger (fade + slide)
+  document.querySelectorAll(".hero-services").forEach(group=>{
+    const items = [...group.querySelectorAll(".hero-service")];
+    items.forEach((it,i)=>{
+      it.style.setProperty("--d", `${i*120}ms`);
+      io.observe(it);
+    });
+  });
+
+
   // Parallax hero background
   const heroBg = document.querySelector(".hero-bg");
   const frame = document.querySelector(".hero-frame");
@@ -179,6 +189,16 @@
         if(!rowsState.length) rowsState=[makeRow()];
         saveRows(rowsState); renderRows(); recalc();
         document.querySelectorAll(".reveal").forEach(el=>io.observe(el));
+
+  // Hero services stagger (fade + slide)
+  document.querySelectorAll(".hero-services").forEach(group=>{
+    const items = [...group.querySelectorAll(".hero-service")];
+    items.forEach((it,i)=>{
+      it.style.setProperty("--d", `${i*120}ms`);
+      io.observe(it);
+    });
+  });
+
       });
       elRows.appendChild(tr);
     });
@@ -225,11 +245,31 @@
     rowsState.push(makeRow());
     saveRows(rowsState); renderRows(); recalc();
     document.querySelectorAll(".reveal").forEach(el=>io.observe(el));
+
+  // Hero services stagger (fade + slide)
+  document.querySelectorAll(".hero-services").forEach(group=>{
+    const items = [...group.querySelectorAll(".hero-service")];
+    items.forEach((it,i)=>{
+      it.style.setProperty("--d", `${i*120}ms`);
+      io.observe(it);
+    });
+  });
+
   });
   document.getElementById("btnClear")?.addEventListener("click", ()=>{
     rowsState=[makeRow()];
     saveRows(rowsState); renderRows(); recalc();
     document.querySelectorAll(".reveal").forEach(el=>io.observe(el));
+
+  // Hero services stagger (fade + slide)
+  document.querySelectorAll(".hero-services").forEach(group=>{
+    const items = [...group.querySelectorAll(".hero-service")];
+    items.forEach((it,i)=>{
+      it.style.setProperty("--d", `${i*120}ms`);
+      io.observe(it);
+    });
+  });
+
   });
   document.getElementById("btnCopy")?.addEventListener("click", async ()=>{
     try{
@@ -243,4 +283,14 @@
 
   renderCoefGrid(); renderRows(); recalc();
   document.querySelectorAll(".reveal").forEach(el=>io.observe(el));
+
+  // Hero services stagger (fade + slide)
+  document.querySelectorAll(".hero-services").forEach(group=>{
+    const items = [...group.querySelectorAll(".hero-service")];
+    items.forEach((it,i)=>{
+      it.style.setProperty("--d", `${i*120}ms`);
+      io.observe(it);
+    });
+  });
+
 })();
